@@ -1,0 +1,143 @@
+body{
+  background-color:hsl(222, 26%, 31%);
+}
+#result{
+  width:320px;
+  height:50px;
+  margin-left:30.5%;
+   background-color: hsl(224, 36%, 15%);
+  color:white;
+   font-size: 24px;
+   font-weight: bold;
+   border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  margin-top:25px;
+}
+#clc{
+  color:white;
+  font-size:25px;
+  font-style:bold;
+  margin-left:31%;
+}
+#tm{
+   color:white;
+   font-size:10px;
+  margin-left:12%;
+}
+#num{
+  color:white;
+   font-size:10px;
+  margin-left:51%;
+  word-spacing: 20px;
+  margin-bottom: 2px;
+}
+#fr{
+     padding: 10px 20px;
+     background-color:hsl(30, 25%, 89%);
+    box-shadow:hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%) ;
+    margin : 5px;
+     width :70px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+#clear{
+   margin : 5px;
+   width :153px;
+  color: white;
+    background-color:hsl(224, 28%, 35%);
+   font-size: 24px;
+     font-weight: bold;
+     border: none;
+   padding: 10px 20px;
+  border-radius: 5px;
+}
+#dl{
+  padding: 10px 20px;
+   background-color:hsl(224, 28%, 35%);
+    box-shadow:hsl(28, 16%, 65%);
+  color: white;
+    margin : 5px;
+     width :70px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  
+}
+#equal{
+     margin : 5px;
+   width :153px;
+  color: white;
+      background-color:hsl(6, 63%, 50%);
+   font-size: 24px;
+            font-weight: bold;
+            border: none;
+   padding: 10px 20px;
+            border-radius: 5px;
+}
+#tap{
+  margin-left:30%;
+  padding: 10px;
+    border-color:hsl(223, 31%, 20%);  
+     border-radius: 10px;
+  border-style: solid;  
+ position: fixed;
+  background-color: hsl(223, 31%, 20%);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-left:10px;
+   width: 60px;
+  height: 30px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(223, 31%, 20%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: hsl(6, 63%, 50%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: hsl(0, 0%, 93%);
+}
+ 
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 14px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+body.active{
+  background-color: orange;
+} 
+
